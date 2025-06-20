@@ -1,0 +1,75 @@
+
+Statement Execution
+
+
+
+Write a program to execute the datas with the statement.
+
+Input Format
+
+    first input corresponds to integer
+    second input corresponds to float
+    third input corresponds to char
+    fourth input correspond to string
+    fifth input correspond to String
+
+Constraints
+
+No Constraints
+
+Output Format
+
+    execute the user inputs with the statemets
+
+Sample Input 0
+
+23
+45.56
+A
+hello
+hello world
+
+Sample Output 0
+
+Integer is 23
+Float is 45.56
+Character is A
+Strings are hello and hello world
+
+Sample Input 1
+
+48
+78.56
+y
+sample
+sample input
+
+Sample Output 1
+
+Integer is 48
+Float is 78.56
+Character is y
+Strings are sample and sample input
+*************************************************************************
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a;
+    float b;
+    char c;
+    char d[50];
+    char e[100];
+    scanf("%d", &a);
+    scanf("%f", &b);
+    scanf("\n%c", &c);
+    scanf("\n%s\n", d);
+
+    scanf("%[^\n]s", e);
+    printf("Integer is %d \nFloat is %.2f \nCharacter is %c",a,b,c);
+    printf("\nStrings are %s and %s", d, e);
+
+    return 0;
+}
