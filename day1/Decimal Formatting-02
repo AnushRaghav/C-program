@@ -1,0 +1,49 @@
+
+Decimal Formatting-02
+
+Diya wants to know how the decimal digit values are performing in programming.could you please help her to learn the decimal formatting.
+
+Input Format
+
+    input consists of float
+
+Constraints
+
+No Constraints
+
+Output Format
+
+    execute the values depends on the sample output format.
+
+Sample Input 0
+
+45.3456
+
+Sample Output 0
+
+45.34
+45.35
+
+Sample Input 1
+
+78.5465
+
+Sample Output 1
+
+78.54
+78.55
+
+******************************************************
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float a;
+    scanf("%f",&a);
+    float final=floor(a*100)/100;
+    printf("%.2f\n",final);
+    printf("%0.2f",a);
+    return 0;
+}
